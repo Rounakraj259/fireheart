@@ -1,0 +1,112 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Fire Heart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            width: 100px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #1a237e;
+        }
+        .contact-info i {
+            margin-right: 0.5rem;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            top: 4rem;
+            left: 1rem;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .menu a {
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+        .menu a:hover {
+            background: #f0f0f0;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+    <div class="absolute top-0 left-0 p-4">
+        <i class="fas fa-bars text-2xl cursor-pointer" onclick="toggleMenu()"></i>
+        <div class="menu" id="menu">
+            <a href="pages/front.html">Home</a>
+            <a href="pages/register.html">Register</a>
+            <a href="pages/search.html">Search</a>
+            <a href="pages/payment.html">Payment</a>
+            <a href="pages/library.html">My Library</a>
+            <a href="pages/like_songs.html">Liked Songs</a>
+        </div>
+    </div>
+    <div class="absolute top-0 middle-0 p-4">
+        <input class="border rounded px-2 py-1" placeholder="Search music" type="text"/>
+    </div>
+    <div class="absolute top-0 left-0 mt-12 ml-4">
+        <i class="fas fa-home text-2xl"></i>
+    </div>
+    <div class="absolute top-0 right-0 mt-12 mr-4">
+        <img alt="Fire Heart logo" class="logo" height="100" src="C:\Users\HP\Desktop\logo.png" width="100"/>
+    </div>
+    <div class="text-center mt-24">
+        <h1 class="title">* FIRE HEART</h1>
+        <p class="subtitle">Music which fires</p>
+    </div>
+    <div class="absolute bottom-0 right-0 p-4 contact-info">
+        <p>
+            <a class="text-blue-500 hover:underline" href="mailto:rounak91539@gmail.com">
+                <i class="fas fa-envelope"></i>
+                rounak91539@gmail.com
+            </a>
+        </p>
+        <p>
+            <a class="text-blue-500 hover:underline" href="tel:9153983492">
+                <i class="fas fa-phone"></i>
+                9153983492
+            </a>
+        </p>
+        <p>
+            <a class="text-blue-500 hover:underline" href="https://www.instagram.com/Rounakraj259" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Rounakraj259
+            </a>
+        </p>
+    </div>
+</body>
+</html>

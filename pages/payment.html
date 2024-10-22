@@ -1,0 +1,174 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
+   <div class="flex justify-between items-center bg-blue-900 text-white p-4 rounded-t-lg">
+    <span>
+     ORDER OVERVIEW
+    </span>
+    <span>
+     ₹ 32.50
+    </span>
+   </div>
+   <div class="p-4">
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2">
+      PLEASE SELECT A PAYMENT METHOD
+     </label>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2">
+      CREDIT / DEBIT CARD
+     </label>
+    </div>
+    <div class="mb-4">
+     <div class="flex justify-between">
+      <div class="w-1/2 pr-2">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="first-name">
+        First name
+       </label>
+       <div class="relative">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="first-name" type="text" placeholder="First name"/>
+        <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-green-500">
+         <i class="fas fa-check">
+         </i>
+        </span>
+       </div>
+       <span class="text-xs text-gray-500">
+        Optional
+       </span>
+      </div>
+      <div class="w-1/2 pl-2">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="last-name">
+        Last name
+       </label>
+       <div class="relative">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="last-name" type="text" placeholder="Last name"/>
+        <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-green-500">
+         <i class="fas fa-check">
+         </i>
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="card-number">
+      Card number
+     </label>
+     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="card-number" type="text" placeholder="Card number"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="cvv">
+      CVV
+     </label>
+     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cvv" type="text" placeholder="CVV"/>
+    </div>
+    <div class="mb-4 flex justify-between">
+     <img alt="American Express logo" height="25" src="https://storage.googleapis.com/a1aa/image/AyY6IQ5j6MpGDFf50gaPtaiPuWhmL27u8ChAGQH7OF8uxL0JA.jpg" width="40"/>
+     <img alt="Carte Bleue logo" height="25" src="https://storage.googleapis.com/a1aa/image/J3XpWOhc3UpaIdvexWmuvHlwrhbbIViXszDfeaGMQSeSNeCdC.jpg" width="40"/>
+     <img alt="Diners Club logo" height="25" src="https://storage.googleapis.com/a1aa/image/A3LeFGYUbfnbSE7dg9kr9eqN0dUaXLfZLZJhQleTTQ3nb8CdC.jpg" width="40"/>
+     <img alt="Discover logo" height="25" src="https://storage.googleapis.com/a1aa/image/RA32Xy7v57IHBddxsEEfR4OKGbx7cfyFLiXybrICHO0ajXoTA.jpg" width="40"/>
+     <img alt="JCB logo" height="25" src="https://storage.googleapis.com/a1aa/image/TWUoKppWelXEd6ZHFqxJhRyaQ5VYr2XHvFoeuIMHrDoWjXoTA.jpg" width="40"/>
+     <img alt="Maestro logo" height="25" src="https://storage.googleapis.com/a1aa/image/uXTLnfXDFJVaXqTl5vZAT1ZY1envJwmTph5Juvgibd0fGvQnA.jpg" width="40"/>
+     <img alt="MasterCard logo" height="25" src="https://storage.googleapis.com/a1aa/image/O4AJy5bh9AbVAVrzpqdlQBv7NVTsLbiuQDhh4bxsXgerxL0JA.jpg" width="40"/>
+     <img alt="UATP logo" height="25" src="https://storage.googleapis.com/a1aa/image/3ql4DehkE52MdSJXWVSIFvz2cjucSeAauTTEjYpZy5lgjXoTA.jpg" width="40"/>
+     <img alt="Visa logo" height="25" src="https://storage.googleapis.com/a1aa/image/oD38UDBMMnraOB7rOzujYRiD0e6orzi0bB0W7jQNaohsxL0JA.jpg" width="40"/>
+    </div>
+    <div class="mb-4 flex justify-between">
+     <div class="w-1/2 pr-2">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="valid-month">
+       Valid until
+      </label>
+      <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="valid-month">
+       <option>
+        Month
+       </option>
+       <option>
+        January
+       </option>
+       <option>
+        February
+       </option>
+       <option>
+        March
+       </option>
+       <option>
+        April
+       </option>
+       <option>
+        May
+       </option>
+       <option>
+        June
+       </option>
+       <option>
+        July
+       </option>
+       <option>
+        August
+       </option>
+       <option>
+        September
+       </option>
+       <option>
+        October
+       </option>
+       <option>
+        November
+       </option>
+       <option>
+        December
+       </option>
+      </select>
+     </div>
+     <div class="w-1/2 pl-2">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="valid-year">
+      </label>
+      <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="valid-year">
+       <option>
+        Year
+       </option>
+       <option>
+        2023
+       </option>
+       <option>
+        2024
+       </option>
+       <option>
+        2025
+       </option>
+       <option>
+        2026
+       </option>
+       <option>
+        2027
+       </option>
+       <option>
+        2028
+       </option>
+       <option>
+        2029
+       </option>
+       <option>
+        2030
+       </option>
+      </select>
+     </div>
+    </div>
+    <div class="flex justify-between">
+     <button class="bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+      Cancel
+     </button>
+     <button class="bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+      Submit
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

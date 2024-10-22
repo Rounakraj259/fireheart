@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="w-96 border border-gray-400 rounded-lg overflow-hidden">
+        <form onsubmit="searchMusic(event)" class="flex items-center bg-gray-200 p-2 border-b border-gray-400">
+            <i class="fas fa-search text-xl text-gray-600"></i>
+            <input type="text" id="song" placeholder="Search music" class="ml-2 w-full bg-gray-200 outline-none">
+            <button type="submit" class="hidden"></button>
+        </form>
+        <div class="p-2 bg-gray-200 border-b border-gray-400">
+            <h2 class="font-bold text-lg">Recent Searches</h2>
+        </div>
+        <div id="recent-searches" class="p-2 border-b border-gray-400">
+            <p><span class="font-bold">Die With A Smile:</span> By Lady Gaga and Bruno Mars</p>
+            <p><span class="font-bold">Espresso:</span> By Sabrina Carpenter</p>
+            <p>Kadar na jaane</p>
+        </div>
+        <div class="p-2 bg-gray-200 h-40"></div>
+    </div>
+
+    <script>
+        function searchMusic(event) {
+            event.preventDefault();
+            const song = document.getElementById('song').value;
+            if (song) {
+                addRecentSearch(song);
+                const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(song)}`;
+                window.location.href = url;
+            }
+        }
+
+        function addRecentSearch(song) {
+            const recentSearches = document.getElementById('recent-searches');
+            const newSearch = document.createElement('p');
+            newSearch.innerHTML = `<span class="font-bold">${song}</span>`;
+            newSearch.classList.add('cursor-pointer');
+            newSearch.onclick = () => {
+                const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(song)}`;
+                window.location.href = url;
+            };
+            recentSearches.prepend(newSearch);
+        }
+    </script>
+</body>
+</html>
